@@ -1,0 +1,143 @@
+body, .app-root {
+  min-height: 100vh;
+  background: #1a2239;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; 
+}
+
+.app-root {
+  display: flex;
+}
+.main-content {
+  margin-left: 33.33vw;
+  width: 66.67vw;
+  padding: 40px;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  text-align: left;   /* Ubah jadi rata kiri */
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: calc(33.33vw + ( (66.67vw - 700px)/2 ));
+  box-sizing: border-box;
+}
+
+.main-content p {
+  line-height: 1.7;
+  margin-bottom: 1.5em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content section {
+  margin-bottom: 120px;    /* jarak ke bawah tiap section */
+}
+
+.main-content section + section {
+  margin-top: 120px;       /* jarak ke atas antar section */
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* Jarak antar card */
+  margin-top: 32px;
+}
+
+.experience-card {
+  display: flex;
+  background: #22294a;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px 0 rgba(30,203,225,0.08);
+  padding: 32px;
+  align-items: flex-start;
+  gap: 28px;
+  transition: box-shadow 0.2s;
+}
+
+.experience-card:hover {
+  box-shadow: 0 8px 28px 0 rgba(30,203,225,0.17);
+}
+
+.experience-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.experience-card-date {
+  font-weight: 600;
+  color: #1ecbe1;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.experience-card-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #1a2239;
+  border: 2px solid #1ecbe1;
+}
+
+.experience-card-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.experience-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.experience-card-title {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.experience-card-location {
+  background: #1ecbe1;
+  color: #1a2239;
+  border-radius: 7px;
+  padding: 3px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience-card-desc {
+  color: #dbeafe;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.experience-card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.experience-skill {
+  background: rgba(30,203,225,0.16);
+  color: #1ecbe1;
+  border: 1px solid #1ecbe1;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  transition: background 0.18s, color 0.18s;
+}
+
+/* Hapus seluruh rule .spotlight */

@@ -1,0 +1,28 @@
+.lightspot {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 800px;
+  height: 800px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.08) 0%,  
+    rgba(6, 89, 128, 0.26) 12%,
+    /* rgba(255,255,255,0.052) 22%, */
+    rgba(12, 10, 99, 0.185) 32%,
+    /* rgba(255,255,255,0.028) 44%, */
+    rgba(22, 6, 92, 0.295) 58%,
+    /* rgba(255,255,255,0.012) 70%, */
+    #1a2239 82%,
+    /* rgba(255,255,255,0.003) 92%, */
+    #1a2239 100%
+  );
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: left 0.09s linear, top 0.09s linear;
+  mix-blend-mode: lighten;
+  filter: blur(3px);
+  transition : none
+}

@@ -1,0 +1,98 @@
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  background: #22294a;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 16px 0;
+  width: 100%;         /* Full width of parent */
+  max-width: 600px;    /* Same as experience card */
+  color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(60,60,120,0.17);
+}
+
+.project-image {
+  width: 56px;       /* Ukuran kecil, mirip experience */
+  height: 56px;
+  object-fit: cover;
+  background: #eee;
+  border-radius: 12px;
+  margin: 16px;
+  flex-shrink: 0;
+}
+
+.project-info {
+  flex: 1;
+  padding: 16px 20px 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.project-link-icon {
+  margin-left: 12px;
+  color: #fff;
+  transition: color 0.2s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.project-card:hover .project-link-icon {
+  color: #1976d2;
+  transform: rotate(-30deg) scale(1.2);
+}
+
+.project-desc {
+  margin: 8px 0 0 0;
+  font-size: 0.97rem;
+  color: #d3d3d3;
+  line-height: 1.5;
+}
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.project-skills {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-skill-tag {
+  background: #272a36;
+  color: #90caf9;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #23242d;
+  user-select: none;
+  margin-bottom: 2px;
+}

@@ -1,18 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import ProjectCard from "./components/ProjectCard";
 import Sidebar from './components/Sidebar';
+import Lightspot from "./components/Lightspot";
 import './App.css';
 
-const sections = [
-  { id: 'about', label: 'about' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'projects', label: 'Project' },
-];
+
 
 function App() {
+  // State to track the active section based on scroll position
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
+      const sections = [
+  { id: 'about', label: 'about' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Project' },
+  { id: 'education', label: 'Education' },
+];
       const scrollPos = window.scrollY + 120;
       let current = 'about';
       for (let i = 0; i < sections.length; i++) {
@@ -25,111 +30,248 @@ function App() {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="app-root">
+      <Lightspot />
       <Sidebar activeSection={activeSection} />
       <main className="main-content">
         <section id="about">
           <h2>About</h2>
           <p>
-            Nico Aramy is a versatile professional with a diploma in Computer Engineering and a strong foundation in administration, IT support, and full-stack web development. With a career spanning educational institutions and private businesses, he has built a diverse skill set that includes managing school operations, designing digital forms and automations with Google Workspace, and handling student and staff data through national education platforms. His adaptability and organizational strength are backed by solid communication and problem-solving abilities.
+            Dedicated professional with a diploma in Computer Engineering and a proven track record in administration, IT support, and full-stack web development. My career spans educational institutions and private enterprises, where I have managed school operations, streamlined digital workflows with Google Workspace, and maintained critical data systems. My strong organizational skills are complemented by effective communication and a problem-solving mindset.
           </p>
           <p>
-            In addition to his administrative role, Nico has engaged in freelance full-stack development using Laravel and Next.js, focusing on user-friendly, responsive web applications. He has experience with API integration, authentication systems, and deployment, showing a commitment to building functional digital tools. His background also includes creative marketing support—designing promotional materials and coordinating events at a vehicle dealership in Banda Aceh.
+            As a freelance full-stack developer, I specialize in building responsive, user-centric web applications using <span className="footer-highlight">Laravel</span> and <span className="footer-highlight">Next.js</span>. My expertise includes API integration, authentication systems, and modern deployment practices. I am also experienced in creative marketing, having designed promotional materials and coordinated events for automotive businesses.
           </p>
           <p>
-            Beyond his tech and office roles, Nico is an entrepreneur running a small bakery business, where he applies strategic thinking in product management, customer service, and marketing. His technical proficiency, entrepreneurial mindset, and dedication to continuous learning make him a valuable asset across both tech-driven and operational environments.
+            Beyond my technical and administrative roles, I am an entrepreneur managing a small bakery business, where I apply strategic thinking to product management, customer service, and marketing. My commitment to continuous learning and adaptability enables me to deliver value in both technology-driven and operational environments.
           </p>
         </section>
         <section id="experience">
-  <h2>Experience</h2>
-  <div className="experience-list">
-    <div className="experience-card">
-      <div className="experience-card-left">
-        <div className="experience-card-date">2024 - Present</div>
-        <img 
-          src="https://via.placeholder.com/90x90.png?text=Logo" 
-          alt="Company/Project Logo" 
-          className="experience-card-image"
-        />
-      </div>
-      <div className="experience-card-right">
-        <div className="experience-card-title-row">
-          <span className="experience-card-title">Senior Front End</span>
-          <span className="experience-card-location">Jakarta</span>
-        </div>
-        <div className="experience-card-desc">
-          Responsible for developing scalable frontend architecture and leading a team of engineers to deliver high-quality web applications.
-        </div>
-        <div className="experience-card-skills">
-          <span className="experience-skill">JavaScript</span>
-          <span className="experience-skill">React</span>
-          <span className="experience-skill">Laravel</span>
-          <span className="experience-skill">Next.js</span>
-        </div>
-      </div>
-    </div>
-    {/* Tambah card berikutnya dengan struktur serupa */}
-    <div className="experience-card">
-      <div className="experience-card-left">
-        <div className="experience-card-date">2022 - 2024</div>
-        <img 
-          src="https://via.placeholder.com/90x90.png?text=Logo2" 
-          alt="Company/Project Logo" 
-          className="experience-card-image"
-        />
-      </div>
-      <div className="experience-card-right">
-        <div className="experience-card-title-row">
-          <span className="experience-card-title">Web Developer</span>
-          <span className="experience-card-location">Remote</span>
-        </div>
-        <div className="experience-card-desc">
-          Developed and maintained full-stack web solutions for clients, focusing on performance and modern UX.
-        </div>
-        <div className="experience-card-skills">
-          <span className="experience-skill">PHP</span>
-          <span className="experience-skill">Laravel</span>
-          <span className="experience-skill">MySQL</span>
-          <span className="experience-skill">Bootstrap</span>
-        </div>
-      </div>
-    </div>
-    {/* Tambah card berikutnya dengan struktur serupa */}
-    <div className="experience-card">
-      <div className="experience-card-left">
-        <div className="experience-card-date">2020 - 2022</div>
-        <img 
-          src="https://via.placeholder.com/90x90.png?text=Logo2" 
-          alt="Company/Project Logo" 
-          className="experience-card-image"
-        />
-      </div>
-      <div className="experience-card-right">
-        <div className="experience-card-title-row">
-          <span className="experience-card-title">Android Developer</span>
-          <span className="experience-card-location">Medan</span>
-        </div>
-        <div className="experience-card-desc">
-          Developed and maintained Android applications, focusing on performance and modern UX.
-        </div>
-        <div className="experience-card-skills">
-          <span className="experience-skill">Java</span>
-          <span className="experience-skill">Kotlin</span>
-          <span className="experience-skill">Android SDK</span>
-          <span className="experience-skill">Firebase</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-        <section id="projects">
-          <h2>Project</h2>
-          <p>Daftar proyek yang pernah kamu kerjakan...</p>
+          <h2>Work Experience</h2>
+          <div className="experience-list">
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2022 - Present</div>
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrui3NRmMvYHvfP5UIixQXHasaidXkrw6gPw&s" 
+                  alt="Company/Project Logo" 
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">School Operator</span>
+                  <span className="experience-card-location">Central Aceh</span>
+                </div>
+                <span className="experience-card-workplace">TK IT Cendekia</span>
+                <div className="experience-card-desc">
+                  Managed school administration, student/staff data, Dapodik operations, BOP budgeting, and provided basic IT support.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Google Workspace</span>
+                  <span className="experience-skill">AppScript</span>
+                  <span className="experience-skill">Administration</span>
+                  <span className="experience-skill">Data Entry</span>
+                  <span className="experience-skill">IT Support</span>
+                  <span className="experience-skill">Dapodik</span>
+                  <span className="experience-skill">ARKAS</span>
+                </div>
+              </div>
+            </div>
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2024 - Present</div>
+                <img 
+                  src="https://i.ibb.co/vxhYmzSd/mommy-vani-bakery.png" 
+                  alt="Mommy Vani Bakery Logo" 
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">Home Business Owner</span>
+                  <span className="experience-card-location">Central Aceh</span>
+                </div>
+                <span className="experience-card-workplace">Mommy and Vani Bakery</span>
+                <div className="experience-card-desc">
+                  Produced and marketed pastries and drinks, managed inventory, orders, and profit optimization.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Product Deployment</span>
+                  <span className="experience-skill">Food Safety</span>
+                  <span className="experience-skill">Inventory Management</span>
+                  <span className="experience-skill">Marketing Strategy</span>
+                </div>
+              </div>
+            </div>
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2023 - Present</div>
+                <img 
+                  src="https://joshuapauldesign.com/wp-content/uploads/2021/12/Freelance-Web-Designer-Logo-1.png" 
+                  alt="Company/Project Logo" 
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">Full-stack Web Developer</span>
+                  <span className="experience-card-location">Remote</span>
+                </div>
+                <div className="experience-card-desc">
+                  Built and maintained internal web apps using Laravel and Next.js with user authentication and responsive UI.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Laravel</span>
+                  <span className="experience-skill">Next.js</span>
+                  <span className="experience-skill">MySQL</span>
+                  <span className="experience-skill">Auth</span>
+                  <span className="experience-skill">UI/UX</span>
+                </div>
+              </div>
+            </div>
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2020 - 2021</div>
+                <img 
+                  src="https://www.cakerja.com/wp-content/uploads/2024/12/Lowongan-Kerja-PT-Armada-Perkasa-Mobilindo-400x300.webp" 
+                  alt="PT. Armada Banda Jaya Logo" 
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">Designer</span>
+                  <span className="experience-card-location">Banda Aceh</span>
+                </div>
+                <span className="experience-card-workplace">PT. Armada Banda Jaya</span>
+                <div className="experience-card-desc">
+                  Designed marketing materials, coordinated ad placements, supported events, and documented company activities.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Adobe Photoshop</span>
+                  <span className="experience-skill">CorelDRAW</span>
+                  <span className="experience-skill">Billboard Ads</span>
+                  <span className="experience-skill">Branding</span>
+                </div>
+              </div>
+            </div>
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2018 - 2019</div>
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSaLcDQrE6671nhi9U3QZAcPYqgXqX5yK5mg&s" 
+                  alt="Lp3i Logo" 
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">Lab Assistant</span>
+                  <span className="experience-card-location">Banda Aceh</span>
+                </div>
+                <span className="experience-card-workplace">LP3I College</span>
+                <div className="experience-card-desc">
+                  Assisted in laboratory experiments, maintained equipment, and supported students in practical sessions.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Laboratory Skills</span>
+                  <span className="experience-skill">Equipment Maintenance</span>
+                  <span className="experience-skill">Student Support</span>
+                  <span className="experience-skill">Data Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        <section className="projects-section" id="projects">
+          <h2>Projects</h2>
+          <ProjectCard
+            title="Portoku Web"
+            image="https://picsum.photos/seed/portoku/400"
+            link="https://github.com/naiko-coder/portoku"
+            description="Portoku is a personal portfolio website designed to showcase my professional experiences, skills, and projects in a modern and interactive way. Built with React and styled for a sleek user experience."
+            skills={["React", "JavaScript", "CSS", "Responsive Design"]}
+          />
+          <ProjectCard
+            title="New Student Registration System"
+            image="https://picsum.photos/seed/studentregistration/400"
+            link="https://github.com/naiko-coder/student-registration"
+            description="A comprehensive student registration system that allows educational institutions to manage student data efficiently. Made with Google Workspace and Apps Script."
+            skills={["Google Workspace", "Apps Script"]}
+          />
+          <ProjectCard
+            title="Worker Absence Management System"
+            image="https://picsum.photos/seed/workerabsence/400"
+            link="https://github.com/naiko-coder/worker-absence"
+            description="A system designed to manage and track employee absences efficiently. Built with Laravel framework."
+            skills={["Laravel", "PHP", "MySQL"]}
+          />
+          <ProjectCard
+            title="To-do List with Today Moods"
+            image="https://picsum.photos/seed/todolist/400"
+            link="https://github.com/naiko-coder/todo-list"
+            description="A simple to-do list application that allows users to manage their tasks effectively. The app features a mood tracker to help users stay aware of their emotional well-being while working on tasks."
+            skills={["React", "JavaScript", "CSS"]}
+          />
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <div className="education-list">
+            <div className="education-card">
+              <div className="education-card-left">
+                <div className="education-card-date">2019 - 2022</div>
+                <img 
+                  src="https://www.pancabudi.ac.id/unpab/image/info/logo_unpab_4x.png" 
+                  alt="Unpab Logo" 
+                  className="education-card-image"
+                />
+              </div>
+              <div className="education-card-right">
+                <div className="education-card-title-row">
+                  <span className="education-card-title">Diploma III in Computer Engineering</span>
+                  <span className="education-card-location">Medan</span>
+                </div>
+                <span className="education-card-school">Universitas Pembangunan Panca Budi</span>
+                <div className="education-card-desc">
+                  Specialized in computer engineering, networking, and fundamental programming, with a strong foundation in both theoretical knowledge and hands-on skills.
+                </div>
+              </div>
+            </div>
+            <div className="education-card">
+              <div className="education-card-left">
+                <div className="education-card-date">2017 - 2019</div>
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSaLcDQrE6671nhi9U3QZAcPYqgXqX5yK5mg&s" 
+                  alt="LP3I College Logo" 
+                  className="education-card-image"
+                />
+              </div>
+              <div className="education-card-right">
+                <div className="education-card-title-row">
+                  <span className="education-card-title">Diploma II in Computer Engineering</span>
+                  <span className="education-card-location">Banda Aceh</span>
+                </div>
+                <span className="education-card-school">LP3I College</span>
+                <div className="education-card-desc">
+                  Focused on computer engineering, networking, and basic programming. Graduated with strong practical and theoretical skills.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer className="site-footer">
+          <div>
+            <span>
+              This site was crafted with <span className="footer-highlight">Visual Studio Code</span> and customized using <span className="footer-highlight">React</span> and <span className="footer-highlight"><b>Pure CSS</b></span>, then deployed via <span className="footer-highlight">Vercel</span>. All text is set in the <span className="footer-highlight">Inter</span> typeface.
+            </span>
+          </div>
+        </footer>
       </main>
     </div>
   );

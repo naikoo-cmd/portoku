@@ -7,12 +7,20 @@ function Sidebar({ activeSection }) {
       <div className="sidebar-content">
         <h1 className="sidebar-title">I'm Nico Aramy</h1>
         <p className="sidebar-subtitle">Web Developer | Frontend Enthusiast</p>
-        <p className="sidebar-tagline">Make something amazing.</p>
+        <p
+          className="sidebar-tagline"
+          style={{
+            cursor: 'url("/cursor.cur") 16 16, pointer'
+          }}
+        >
+          "Frontend-focused learner on the fullstack journey. Tech enthusiast with admin & IT roots."
+        </p>
+
         <nav className="sidebar-nav">
           <a
             href="#about"
             className={`sidebar-nav-link${activeSection === 'about' ? ' active' : ''}`}
-          >about</a>
+          >About</a>
           <a
             href="#experience"
             className={`sidebar-nav-link${activeSection === 'experience' ? ' active' : ''}`}
@@ -21,6 +29,10 @@ function Sidebar({ activeSection }) {
             href="#projects"
             className={`sidebar-nav-link${activeSection === 'projects' ? ' active' : ''}`}
           >Project</a>
+          <a
+            href="#education"
+            className={`sidebar-nav-link${activeSection === 'education' ? ' active' : ''}`}
+          >Education</a>
         </nav>
         {/* Social icons */}
         <div className="sidebar-social">

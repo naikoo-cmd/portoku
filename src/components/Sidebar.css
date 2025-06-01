@@ -43,7 +43,13 @@
   font-size: 1rem;
   color: #71717a;
   margin-bottom: 2.5rem;
-  text-align: center;
+  text-align: center; 
+ 
+}
+.sidebar-tagline:hover {
+  color: #fff;
+  filter: brightness(1.7);
+
 }
 
 .sidebar-nav {

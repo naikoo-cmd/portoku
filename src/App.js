@@ -76,7 +76,7 @@ function App() {
                   <span className="experience-skill">Google Workspace</span>
                   <span className="experience-skill">AppScript</span>
                   <span className="experience-skill">Administration</span>
-                  <span className="experience-skill">Data Entry</span>
+                  <span className="experience-skill">Networking</span>
                   <span className="experience-skill">IT Support</span>
                   <span className="experience-skill">Dapodik</span>
                   <span className="experience-skill">ARKAS</span>

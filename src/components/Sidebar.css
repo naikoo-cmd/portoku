@@ -117,3 +117,14 @@
 .sidebar-social-icon {
   display: block;
 }
+
+.sidebar-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 14px auto;
+  display: block;
+  border: 3px solid #1ecbe1;
+  background: #23232a;
+}

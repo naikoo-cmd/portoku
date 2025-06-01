@@ -5,7 +5,13 @@ function Sidebar({ activeSection }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-content">
+        <img
+          src="/nico.jpeg"
+          alt="Nico Aramy"
+          className="sidebar-photo"
+        />
         <h1 className="sidebar-title">I'm Nico Aramy</h1>
+
         <p className="sidebar-subtitle">Web Developer | Frontend Enthusiast</p>
         <p
           className="sidebar-tagline"

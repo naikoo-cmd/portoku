@@ -128,3 +128,31 @@
   border: 3px solid #1ecbe1;
   background: #23232a;
 }
+
+@media (max-width: 1100px) {
+  .sidebar {
+    position: static;
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #23232a;
+    background: #1a2239;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    display: block; /* Tambahkan ini agar flex hilang */
+  }
+  .sidebar-content {
+    align-items: flex-start;   /* Ubah dari center ke flex-start */
+    justify-content: flex-start; /* Ubah dari center ke flex-start */
+    padding: 12px 12px 8px 12px; /* Lebih rapat */
+  }
+  .main-content {
+    margin-left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 32px 8px 0 8px;
+  }
+}

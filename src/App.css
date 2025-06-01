@@ -412,3 +412,47 @@ html {
     margin-top: 24px;
   }
 }
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #23232a;
+    background: #1a2239;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+  }
+  .main-content {
+    margin-left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 32px 8px 0 8px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .sidebar {
+    position: static;
+    width: 100vw;
+    min-width: 0;
+    max-width: 100vw;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #23232a;
+    background: #1a2239;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+  }
+  .main-content {
+    margin-left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 32px 8px 0 8px;
+  }
+}

@@ -6,7 +6,7 @@ function Sidebar({ activeSection }) {
     <aside className="sidebar">
       <div className="sidebar-content">
         <img
-          src="/nico.jpeg"
+          src="/nico1.jpeg"
           alt="Nico Aramy"
           className="sidebar-photo"
         />

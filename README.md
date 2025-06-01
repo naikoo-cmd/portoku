@@ -24,8 +24,8 @@ This is a personal portfolio website built with **React** and **pure CSS** to sh
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/naiko-coder/portoku.git
+   cd portoku
    ```
 
 2. **Install dependencies:**

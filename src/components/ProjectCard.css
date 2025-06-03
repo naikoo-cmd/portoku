@@ -2,14 +2,17 @@
   display: flex;
   align-items: flex-start;
   background: #22294a;
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  padding: 32px;
+  gap: 28px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin: 16px 0;
+  width: 100%;         /* Full width of parent */
+  max-width: 92%;    /* Same as experience card */
   overflow: hidden;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
-  margin: 16px 0;
-  width: 100%;         /* Full width of parent */
-  max-width: 600px;    /* Same as experience card */
   color: #fff;
 }
 

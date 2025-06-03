@@ -163,8 +163,8 @@
     align-items: flex-start;
   }
 .sidebar-photo {
-  width: clamp(90px, 32vw, 180px); /* min 90px, ideal 32vw, max 180px */
-  height: clamp(90px, 32vw, 180px);
+  width: clamp(220px, 32vw, 360px);
+  height: clamp(220px, 32vw, 360px);
   object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 20px auto;

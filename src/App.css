@@ -420,19 +420,31 @@ html {
   }
 }
 
-.project-archive-link {
-  margin-top: 32px; /* Atur sesuai kebutuhan */
-  text-align: center;
-}
-
 .project-archive-link a {
-  color: #1ecbe1;
+  color: #fff !important;
   font-weight: 600;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.project-archive-link a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1ecbe1;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
 }
 
 .project-archive-link a:hover {
-  color: #fff;
-  text-decoration: underline;
+  color: #1ecbe1 !important;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.project-archive-link a:hover::after {
+  width: 100%;
 }

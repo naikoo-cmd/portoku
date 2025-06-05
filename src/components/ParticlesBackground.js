@@ -1,10 +1,10 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { loadSnowPreset } from "tsparticles-preset-snow";
 
 export default function ParticlesBackground() {
   const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
+    await loadSnowPreset(engine);
   }, []);
 
   return (
@@ -12,22 +12,24 @@ export default function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       options={{
+        preset: "snow",
         fullScreen: { enable: true, zIndex: 0 },
+        background: { color: "transparent" },
         particles: {
-          number: { value: 18, density: { enable: true, area: 800 } },
-          color: { value: "#fff" },
-          shape: { type: "star" },
-          opacity: { value: 0.8 },
-          size: { value: { min: 1, max: 2 } },
-          move: {
-            enable: true,
-            speed: 8,
-            direction: "bottom-right",
-            straight: false,
-            outModes: { default: "out" }
-          }
+          number: { value: 40 }, // default desktop
+          move: { speed: 0.7 }
         },
-        background: { color: "transparent" }
+        responsive: [
+          {
+            maxWidth: 700, // breakpoint mobile
+            options: {
+              particles: {
+                number: { value: 15 }, // lebih sedikit di mobile
+                move: { speed: 0.4 }   // lebih lambat di mobile
+              }
+            }
+          }
+        ]
       }}
     />
   );

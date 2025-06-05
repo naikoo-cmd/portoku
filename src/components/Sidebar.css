@@ -210,3 +210,8 @@
   }
 }
 
+.sidebar {
+  background: rgba(26, 34, 57, 0.7); /* semi-transparan */
+  z-index: 2;
+}
+

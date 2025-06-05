@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ProjectCard from "./components/ProjectCard";
 import Sidebar from './components/Sidebar';
 import Lightspot from "./components/Lightspot";
+import ParticlesBackground from "./components/ParticlesBackground";
+
 import './App.css';
 
 
@@ -37,6 +39,7 @@ function App() {
   return (
     <div className="app-root">
       <Lightspot />
+      <ParticlesBackground />
       <Sidebar activeSection={activeSection} />
       <main className="main-content">
         <section id="about">
@@ -269,8 +272,28 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="education-card">
+              <div className="education-card-left">
+                <div className="education-card-date">2014 - 2017</div>
+                <img 
+                  src="https://scontent.fkno3-1.fna.fbcdn.net/v/t39.30808-6/310741026_587049219899645_5083694380007950930_n.png?
+                  _nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHaW3lep8dKyriDLtuAVfXfuEryLgks8IG4SvIuCSzwgWJqca5zL5GnhWIJuvO4_BN8woCBa3Jgp75xtdpZYXYK&_nc_ohc=w2Q4tfpWPXgQ7kNvwGnlb3M&_nc_oc=AdnvnN1pLmdViaG-8krhPuBPTU--43G_2wkx1eMmqRGff09MGGNPk3rBw5IO0yceqq8&_nc_zt=23&_nc_ht=scontent.fkno3-1.fna&_nc_gid=UYzH6REgTNvFTXMhwzd0zA&oh=00_AfNwAQnUUGETzuVI6kO2H__SODTpr94NW8bUJ7WS-j1W1A&oe=68476398" 
+                  alt="SMK N 1 Takengon Logo" 
+                  className="education-card-image"
+                />
+              </div>
+              <div className="education-card-right">
+                <div className="education-card-title-row">
+                  <span className="education-card-title">Computer & Network Engineering</span>
+                  <span className="education-card-location">Central Aceh</span>
+                </div>
+                <span className="education-card-school">SMK N 1 Takengon</span>
+                <div className="education-card-desc">
+                   Emphasized hands-on training in computer hardware, network setup, and troubleshooting, preparing students for real-world technical challenges.
+                </div>
+              </div>
+            </div>
           </div>
-          <p>...</p>
         </section>
         <footer className="site-footer">
           <p></p>

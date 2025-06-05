@@ -419,3 +419,20 @@ html {
     right: 0;
   }
 }
+
+.project-archive-link {
+  margin-top: 32px; /* Atur sesuai kebutuhan */
+  text-align: center;
+}
+
+.project-archive-link a {
+  color: #1ecbe1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-archive-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

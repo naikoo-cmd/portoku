@@ -70,7 +70,7 @@ function App() {
                 </div>
                 <span className="experience-card-workplace">TK IT Cendekia</span>
                 <div className="experience-card-desc">
-                  Managed school administration, student/staff data, Dapodik operations, BOP budgeting, and provided basic IT support.
+                   <span className="footer-highlight">Oversaw school administrative operations</span>, including managing student and staff databases, handling Dapodik system updates, organizing BOP budgeting, and offering basic IT troubleshooting and support.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Google Workspace</span>
@@ -99,7 +99,7 @@ function App() {
                 </div>
                 <span className="experience-card-workplace">Mommy and Vani Bakery</span>
                 <div className="experience-card-desc">
-                  Produced and marketed pastries and drinks, managed inventory, orders, and profit optimization.
+                  <span className="footer-highlight">Ran a small food and beverage business</span>, specializing in pastries and drinks; responsibilities included product preparation, inventory tracking, order management, and implementing strategies to optimize profits.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Product Deployment</span>
@@ -124,7 +124,7 @@ function App() {
                   <span className="experience-card-location">Remote</span>
                 </div>
                 <div className="experience-card-desc">
-                  Built and maintained internal web apps using Laravel and Next.js with user authentication and responsive UI.
+                  <span className="footer-highlight">Developed and maintained </span>internal web applications using Laravel and Next.js, featuring secure user authentication, responsive interfaces, and functionality tailored to organizational workflows.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Laravel</span>
@@ -151,7 +151,7 @@ function App() {
                 </div>
                 <span className="experience-card-workplace">PT. Armada Banda Jaya</span>
                 <div className="experience-card-desc">
-                  Designed marketing materials, coordinated ad placements, supported events, and documented company activities.
+                  <span className="footer-highlight">Created marketing and promotional materials</span> for print and digital use, coordinated ad placements across multiple channels, supported company events, and handled visual documentation of organizational activities.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Adobe Photoshop</span>
@@ -177,7 +177,7 @@ function App() {
                 </div>
                 <span className="experience-card-workplace">LP3I College</span>
                 <div className="experience-card-desc">
-                  Assisted in laboratory experiments, maintained equipment, and supported students in practical sessions.
+                  <span className="footer-highlight">Provided assistance in laboratory-based academic settings</span>, helping facilitate student experiments, ensuring proper use and maintenance of lab equipment, and offering hands-on support during practical sessions.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Laboratory Skills</span>
@@ -189,6 +189,7 @@ function App() {
             </div>
           </div>
         </section>
+        
         <section className="projects-section" id="projects">
           <h2>Projects</h2>
           <ProjectCard
@@ -201,24 +202,29 @@ function App() {
           <ProjectCard
             title="New Student Registration System"
             image="https://picsum.photos/seed/studentregistration/400"
-            link="https://github.com/naiko-coder/student-registration"
+            link="https://github.com/naiko-coder/under-development"
             description="A comprehensive student registration system that allows educational institutions to manage student data efficiently. Made with Google Workspace and Apps Script."
             skills={["Google Workspace", "Apps Script"]}
           />
           <ProjectCard
             title="Worker Absence Management System"
             image="https://picsum.photos/seed/workerabsence/400"
-            link="https://github.com/naiko-coder/worker-absence"
+            link="https://github.com/naiko-coder/under-development"
             description="A system designed to manage and track employee absences efficiently. Built with Laravel framework."
             skills={["Laravel", "PHP", "MySQL"]}
           />
           <ProjectCard
             title="To-do List with Today Moods"
             image="https://picsum.photos/seed/todolist/400"
-            link="https://github.com/naiko-coder/todo-list"
+            link="https://github.com/naiko-coder/under-development"
             description="A simple to-do list application that allows users to manage their tasks effectively. The app features a mood tracker to help users stay aware of their emotional well-being while working on tasks."
             skills={["React", "JavaScript", "CSS"]}
           />
+          <div className="project-archive-link">
+    <a href="https://github.com/naiko-coder/under-development" target="_blank" rel="noopener noreferrer">
+      View full project archive →
+    </a>
+  </div>
         </section>
         <section id="education">
           <h2>Education</h2>
@@ -264,8 +270,10 @@ function App() {
               </div>
             </div>
           </div>
+          <p>...</p>
         </section>
         <footer className="site-footer">
+          <p></p>
           <div>
             <span>
               This site was crafted with <span className="footer-highlight">Visual Studio Code</span> and customized using <span className="footer-highlight">React</span> and <span className="footer-highlight"><b>Pure CSS</b></span>, then deployed via <span className="footer-highlight">Vercel</span>. All text is set in the <span className="footer-highlight">Inter</span> typeface.

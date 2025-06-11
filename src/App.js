@@ -133,6 +133,7 @@ function App() {
                   <span className="experience-skill">Laravel</span>
                   <span className="experience-skill">Next.js</span>
                   <span className="experience-skill">MySQL</span>
+                  <span className="experience-skill">API</span>
                   <span className="experience-skill">Auth</span>
                   <span className="experience-skill">UI/UX</span>
                 </div>
@@ -205,9 +206,9 @@ function App() {
           <ProjectCard
             title="New Student Registration System"
             image="https://picsum.photos/seed/studentregistration/400"
-            link="https://github.com/naiko-coder/under-development"
+            link="https://github.com/naiko-coder/ppdb-nextjs"
             description="A comprehensive student registration system that allows educational institutions to manage student data efficiently. Made with Google Workspace and Apps Script."
-            skills={["Google Workspace", "Apps Script"]}
+            skills={["Google Workspace",  "Next.js", "React", "Tailwind CSS",, "Google OAuth", "REST API", "MySQL", "Authentication", "Google Drive"]}
           />
           <ProjectCard
             title="Worker Absence Management System"

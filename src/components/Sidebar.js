@@ -12,7 +12,7 @@ function Sidebar({ activeSection }) {
         />
         <h1 className="sidebar-title">I'm Nico Aramy</h1>
 
-        <p className="sidebar-subtitle">Web Developer | Frontend Enthusiast</p>
+        <p className="sidebar-subtitle">Web Developer | Frontend / Backend Enthusiast </p>
         <p
           className="sidebar-tagline"
           style={{

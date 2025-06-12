@@ -207,7 +207,7 @@ function App() {
             title="New Student Registration System"
             image="https://picsum.photos/seed/studentregistration/400"
             link="https://github.com/naiko-coder/ppdb-nextjs"
-            description="A comprehensive student registration system that allows educational institutions to manage student data efficiently. Made with Google Workspace and Apps Script."
+            description="Student registration system with a modern Next.js and React interface, integrated with Google Workspace for seamless Google OAuth authentication, MySQL data management via REST API, and Google Drive document storage. Styled using Tailwind CSS for a responsive user experience."
             skills={["Google Workspace",  "Next.js", "React", "Tailwind CSS",, "Google OAuth", "REST API", "MySQL", "Authentication", "Google Drive"]}
           />
           <ProjectCard

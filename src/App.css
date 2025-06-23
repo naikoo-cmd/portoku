@@ -455,14 +455,13 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #1a2239;
+  min-height: 100vh;
   z-index: 9999;
+  background: #1a2239;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s;
 }
-
 .preloader-intro {
   display: flex;
   flex-direction: column;

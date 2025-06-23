@@ -84,7 +84,3 @@ src/
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
-
-**Crafted with Visual Studio Code, React, and pure CSS. Deployed on Vercel. Typeface: Inter.**

@@ -51,6 +51,7 @@ function App() {
     <div className="app-root">
       {loading && (
         <div className="preloader">
+          <div className="preloader-spinner"></div>
           <div className="preloader-intro">
             <span className="preloader-intro-text">Welcome to</span>
             <span className="preloader-intro-brand">nicoaramy.com</span>

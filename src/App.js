@@ -131,7 +131,7 @@ function App() {
               <div className="experience-card-left">
                 <div className="experience-card-date">2024 - Present</div>
                 <img
-                  src="https://i.ibb.co/vxhYmzSd/mommy-vani-bakery.png"
+                  src="/vanimommylogo.png"
                   alt="Mommy Vani Bakery Logo"
                   className="experience-card-image"
                 />
@@ -164,8 +164,8 @@ function App() {
               <div className="experience-card-left">
                 <div className="experience-card-date">2022 - 2025</div>
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrui3NRmMvYHvfP5UIixQXHasaidXkrw6gPw&s"
-                  alt="Company/Project Logo"
+                  src="/tkcendlogo.jpg"
+                  alt="LogoTK IT Cendekia"
                   className="experience-card-image"
                 />
               </div>
@@ -198,7 +198,7 @@ function App() {
               <div className="experience-card-left">
                 <div className="experience-card-date">2020 - 2021</div>
                 <img
-                  src="https://www.cakerja.com/wp-content/uploads/2024/12/Lowongan-Kerja-PT-Armada-Perkasa-Mobilindo-400x300.webp"
+                  src="/suzukilogo.webp"
                   alt="PT. Armada Banda Jaya Logo"
                   className="experience-card-image"
                 />
@@ -227,7 +227,7 @@ function App() {
               <div className="experience-card-left">
                 <div className="experience-card-date">2018 - 2019</div>
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSaLcDQrE6671nhi9U3QZAcPYqgXqX5yK5mg&s"
+                  src="/lp3ilogo.png"
                   alt="Lp3i Logo"
                   className="experience-card-image"
                 />
@@ -364,7 +364,7 @@ function App() {
               <div className="education-card-left">
                 <div className="education-card-date">2014 - 2017</div>
                 <img
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvy3I8-Dh7QWpPLSuhfA4A3rktnzV3RlYTJaQ13UvJsGVia2JdJswuDpA6-VytSa5s6SV7r4p4GGqOOS2IWqVNQRmmM9XjqZ6akAWiT_GstvveUG34fuPgkMvMD5LwqUXivCfw51uMjCa/s1600/LOGO+SMK+SMK+NEGERI+1+TAKENGON+HD.jpg"
+                  src="/smk1logo.jpg"
                   alt="SMK N 1 Takengon Logo"
                   className="education-card-image"
                 />

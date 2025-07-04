@@ -47,7 +47,7 @@ function Sidebar({ activeSection }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="sidebar-social-link"
+            className="sidebar-social-link social-icon"
           >
             {/* LinkedIn SVG */}
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -60,13 +60,14 @@ function Sidebar({ activeSection }) {
               <line x1="16" y1="11" x2="16" y2="16" />
               <path d="M16 16v-3a2 2 0 0 0-4 0v3" />
             </svg>
+            <span className="social-tooltip">LinkedIn</span>
           </a>
           <a
             href="https://www.instagram.com/nico_aramy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="sidebar-social-link"
+            className="sidebar-social-link social-icon"
           >
             {/* Instagram SVG */}
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -76,13 +77,14 @@ function Sidebar({ activeSection }) {
               <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37Z" />
               <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
             </svg>
+            <span className="social-tooltip">Instagram</span>
           </a>
           <a
             href="https://github.com/naiko-coder"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="sidebar-social-link"
+            className="sidebar-social-link social-icon"
           >
             {/* GitHub SVG */}
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -90,6 +92,7 @@ function Sidebar({ activeSection }) {
               className="sidebar-social-icon">
               <path d="M12 2C6.476 2 2 6.484 2 12.021c0 4.428 2.865 8.186 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.031 1.532 1.031.892 1.53 2.341 1.089 2.91.833.092-.647.35-1.089.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.447-1.274.098-2.656 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.91-1.296 2.75-1.025 2.75-1.025.546 1.382.202 2.402.1 2.656.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.339-.012 2.423-.012 2.753 0 .267.18.578.688.48A10.02 10.02 0 0022 12.021C22 6.484 17.523 2 12 2z" />
             </svg>
+            <span className="social-tooltip">GitHub</span>
           </a>
         </div>
       </div>

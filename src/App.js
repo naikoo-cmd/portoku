@@ -96,6 +96,37 @@ function App() {
           <div className="experience-list">
             <div className="experience-card">
               <div className="experience-card-left">
+                <div className="experience-card-date">2025 - Present</div>
+                <img
+                  src="/Paperlesslogo.png"
+                  alt="Paperless Hospital Logo"
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <span className="experience-card-title">
+                    Junior Developer
+                  </span>
+                  <span className="experience-card-location">Gayo Lues</span>
+                </div>
+                <span className="experience-card-workplace">
+                  PT. Digital Kreasi Muslim (Paperless Hospital) | RSU Muhammad Ali Kasim
+                </span>
+                <div className="experience-card-desc">
+                  <span className="footer-highlight">
+                    To be determined....{" "}
+                  </span>
+                  {/* this is on-going */}
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">TBD</span>
+
+                </div>
+              </div>
+            </div>
+            <div className="experience-card">
+              <div className="experience-card-left">
                 <div className="experience-card-date">2023 - Present</div>
                 <img
                   src="/webdevlogo.png"
@@ -125,6 +156,7 @@ function App() {
                   <span className="experience-skill">API</span>
                   <span className="experience-skill">Auth</span>
                   <span className="experience-skill">UI/UX</span>
+                  <span className="experience-skill">Etc..</span>
                 </div>
               </div>
             </div>

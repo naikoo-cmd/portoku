@@ -1,101 +1,72 @@
-# Nico Aramy – Personal Portfolio
+# Portoku
 
-A modern, responsive personal portfolio website built with **React** and custom CSS. Showcases professional experience, projects, and education, with a clean UI and smooth user experience.
-
----
+Portoku is a digital portfolio application designed to showcase your work, experience, and skills in a professional and modern platform. With an intuitive interface and customizable features, Portoku helps you build a strong personal brand and present your achievements effectively.
 
 ## ✨ Features
 
-- Responsive design for desktop & mobile
-- Animated loading spinner on first load
-- About, Experience, Projects, and Education sections
-- Interactive project cards with external links
-- Sidebar with social media links
-- Custom cursor and animated highlights
-- All images and logos loaded locally for fast performance
-- Built with [React](https://react.dev/) and custom CSS (no CSS framework)
-- Deployed using [Vercel](https://vercel.com/)
-- Uses [Inter](https://fonts.google.com/specimen/Inter) typeface
+- **Responsive Design**: Seamless experience across desktop and mobile devices.
+- **Portfolio Management**: Easily add, edit, and delete your projects.
+- **About Me Section**: Share your background, experience, and skills.
+- **Integrated Contact**: Get in touch through a contact form or social media links.
+- **Customizable Layout**: Personalize your portfolio to match your style.
 
----
+## 🚀 Built With
 
-## 🚀 Getting Started
+- [React.js](https://react.dev/) / [Next.js](https://nextjs.org/) *(please adjust according to your stack)*
+- [Tailwind CSS](https://tailwindcss.com/) / [Bootstrap](https://getbootstrap.com/)
+- [Node.js](https://nodejs.org/) *(if applicable)*
+- [MongoDB](https://www.mongodb.com/) / [Firebase](https://firebase.google.com/) *(if applicable)*
+- Deployment: [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
 
-### Prerequisites
+> **Note:** Please update the stack above to reflect the actual technologies used in your project.
 
-- [Node.js](https://nodejs.org/) (v16 or newer recommended)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+## 📦 Installation
 
-### Installation
-
-1. **Clone the repository:**
-   ```sh
+1. **Clone this repository:**
+   ```bash
    git clone https://github.com/naiko-coder/portoku.git
    cd portoku
    ```
+
 2. **Install dependencies:**
-   ```sh
+   ```bash
    npm install
    # or
    yarn install
    ```
-3. **Start the development server:**
-   ```sh
-   npm start
+
+3. **Run the application:**
+   ```bash
+   npm run dev
    # or
-   yarn start
+   yarn dev
    ```
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Build for Production
+4. **Open in your browser:**
+   ```
+   http://localhost:3000
+   ```
 
-To create a production build:
+## 📝 Configuration
 
-```sh
-npm run build
-# or
-yarn build
-```
-
-The optimized build will be in the `build/` folder.
-
----
-
-## 🌐 Deployment
-
-This site is deployed using [Vercel](https://vercel.com/).  
-You can deploy your own by connecting your GitHub repository to Vercel and following their deployment instructions.
-
----
-
-## 📁 Folder Structure
-
-```
-public/
-  index.html
-  favicon.ico
-  webdevlogo.png
-  ...
-src/
-  App.js
-  App.css
-  components/
-    Sidebar.js
-    ProjectCard.js
-    ...
-```
-
----
-
-## 🛠️ Customization
-
-- Edit your information, experience, projects, and education in `src/App.js`.
-- Change images and icons in the `public/` folder.
-- Adjust styles in `src/App.css` and component CSS files.
-- To add new sections or features, create new components in `src/components/`.
-
----
+- Edit configuration files in `/src/config` (or relevant folders) to personalize your portfolio.
+- Update your project data, personal information, and contact details through the provided files or admin dashboard (if available).
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open a [new issue](https://github.com/naiko-coder/portoku/issues) or submit a pull request to help improve this project.
+
+## 📬 Contact
+
+For questions or suggestions, feel free to contact:
+
+- Email: aramynico@gmail.com
+- Instagram: [@nico_aramy](https://instagram.com/nico_aramy)
+
+---
+
+> Made with ❤️ by [naiko-coder](https://github.com/naiko-coder)

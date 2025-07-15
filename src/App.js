@@ -65,30 +65,45 @@ function App() {
         <section id="about">
           <h2>About</h2>
           <p>
-            Dedicated professional with a diploma in Computer Engineering and a
-            proven track record in administration, IT support, and full-stack web
-            development. My career spans educational institutions and private
-            enterprises, where I have managed school operations, streamlined
-            digital workflows with Google Workspace, and maintained critical data
-            systems. My strong organizational skills are complemented by effective
-            communication and a problem-solving mindset.
+            I’m a junior developer with a background in Computer Engineering,
+            currently working in a hospital IT department where I manage SIMRS,
+            maintain servers, and support day-to-day operations. I bring a strong
+            mix of tech skills and adaptability — solving real-world problems
+            under pressure while ensuring systems stay reliable and efficient.
           </p>
           <p>
-            As a freelance full-stack developer, I specialize in building
-            responsive, user-centric web applications using{" "}
-            <span className="footer-highlight">Laravel</span> and{" "}
-            <span className="footer-highlight">Next.js</span>. My expertise
-            includes API integration, authentication systems, and modern
-            deployment practices. I am also experienced in creative marketing,
-            having designed promotional materials and coordinated events for
-            automotive businesses.
+            My main focus is full-stack web development using JavaScript-based
+            technologies like{" "}
+            <span className="footer-highlight">React</span> for the frontend,{" "}
+            <span className="footer-highlight">Node.js</span> and{" "}
+            <span className="footer-highlight">Express</span> for the backend, and{" "}
+            <span className="footer-highlight">MySQL</span> for database
+            management. I build responsive, scalable, and user-friendly
+            applications with clean code and efficient architecture. For styling,
+            I rely on <span className="footer-highlight">Tailwind CSS</span>, and
+            I often use tools like{" "}
+            <span className="footer-highlight">Postman</span> for API testing and{" "}
+            <span className="footer-highlight">Navicat</span> for managing
+            databases. My workflow includes version control with{" "}
+            <span className="footer-highlight">Git</span>, and I’m comfortable
+            working in both local and cloud-based environments.
           </p>
           <p>
-            Beyond my technical and administrative roles, I am an entrepreneur
-            managing a small bakery business, where I apply strategic thinking to
-            product management, customer service, and marketing. My commitment to
-            continuous learning and adaptability enables me to deliver value in
-            both technology-driven and operational environments.
+            I have hands-on experience working with{" "}
+            <span className="footer-highlight">Linux</span>-based servers,
+            handling tasks like automated service setups, system monitoring, and
+            optimization — ensuring performance and stability for local network
+            systems.
+          </p>
+          <p>
+            Outside of tech, I help run a small family bakery, where I apply
+            creative thinking in product management, customer service, and
+            marketing. This blend of technical and business experience makes me a
+            flexible and well-rounded developer.
+          </p>
+          <p>
+            I’m passionate about learning, building, and growing — always looking
+            for opportunities to level up and contribute to meaningful projects.
           </p>
         </section>
         <section id="experience">
@@ -115,12 +130,18 @@ function App() {
                 </span>
                 <div className="experience-card-desc">
                   <span className="footer-highlight">
-                    To be determined....{" "}
+                    Acted as on-site programmer {" "}
                   </span>
-                  {/* this is on-going */}
+                  supporting SIMRS users, resolving issues, and developing features based on hospital needs. 
+                  Also handled system setup, data backups, and documentation.
                 </div>
                 <div className="experience-card-skills">
-                  <span className="experience-skill">TBD</span>
+                  <span className="experience-skill">Troubleshooting</span>
+                  <span className="experience-skill">Development</span>
+                  <span className="experience-skill">Linux</span>
+                  <span className="experience-skill">Backup</span>
+                  <span className="experience-skill">Documentation</span>
+                  <span className="experience-skill">Communication</span>
 
                 </div>
               </div>
@@ -291,7 +312,7 @@ function App() {
         </section>
 
         <section className="projects-section" id="projects">
-          <h2>Projects</h2>
+          <h2>My solo projects</h2>
           <ProjectCard
             title="Portoku Web"
             image="https://picsum.photos/seed/portoku/400"

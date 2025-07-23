@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
 function Sidebar({ activeSection }) {
+  const [showSidebarImageModal, setShowSidebarImageModal] = useState(false);
+
   return (
     <aside className="sidebar">
       <div className="sidebar-content">
@@ -9,6 +11,8 @@ function Sidebar({ activeSection }) {
           src="/nico1.jpeg"
           alt="Nico Aramy"
           className="sidebar-photo"
+          style={{ cursor: 'pointer' }}
+          onClick={() => setShowSidebarImageModal(true)}
         />
         <h1 className="sidebar-title">I'm Nico Aramy</h1>
 
@@ -96,6 +100,14 @@ function Sidebar({ activeSection }) {
           </a>
         </div>
       </div>
+      {showSidebarImageModal && (
+        <div className="modal-overlay" onClick={() => setShowSidebarImageModal(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <img src="/nico1.jpeg" alt="Nico Aramy" style={{ maxWidth: '90vw', maxHeight: '80vh', borderRadius: 16 }} />
+            <button className="modal-close-btn" onClick={() => setShowSidebarImageModal(false)}>&times;</button>
+          </div>
+        </div>
+      )}
     </aside>
   );
 }

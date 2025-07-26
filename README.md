@@ -56,10 +56,6 @@ Portoku is a digital portfolio application designed to showcase your work, exper
 
 This project is licensed under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions are welcome! Please open a [new issue](https://github.com/naiko-coder/portoku/issues) or submit a pull request to help improve this project.
-
 ## 📬 Contact
 
 For questions or suggestions, feel free to contact:

@@ -20,7 +20,7 @@ function Sidebar({ activeSection }) {
         <p
           className="sidebar-tagline"
           style={{
-            cursor: 'url("/cursor.cur") 16 16, pointer'
+            cursor: 'url("/cursor.cur") 16 16, pointer',
           }}
         >
           "Frontend-focused learner on the fullstack journey. Tech enthusiast with admin & IT roots."

@@ -62,7 +62,7 @@ function App() {
       <ParticlesBackground />
       <Sidebar activeSection={activeSection} />
       <main className="main-content">
-        <section id="about">
+        <section className="text-center py-4 px-6 max-w-4xl mx-auto" id="about">
           <h2>About</h2>
           <p>
             I’m a junior developer with a background in Computer Engineering,
@@ -87,6 +87,10 @@ function App() {
             databases. My workflow includes version control with{" "}
             <span className="footer-highlight">Git</span>, and I’m comfortable
             working in both local and cloud-based environments.
+            While my core stack is JavaScript-based, I also have experience with 
+            <span className="footer-highlight"> Laravel</span> and have used it{" "} 
+            to build full-featured web applications, especially when PHP is 
+            preferred for server-side logic or integration with legacy systems.
           </p>
           <p>
             I have hands-on experience working with{" "}

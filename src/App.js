@@ -63,59 +63,60 @@ function App() {
       <Sidebar activeSection={activeSection} />
       <main className="main-content">
         <section className="text-center py-4 px-6 max-w-4xl mx-auto" id="about">
-          <h2>About</h2>
-          <p>
-            I’m a junior developer with a background in Computer Engineering,
-            currently working in a hospital IT department where I manage SIMRS,
-            maintain servers, and support day-to-day operations. I bring a strong
-            mix of tech skills and adaptability — solving real-world problems
-            under pressure while ensuring systems stay reliable and efficient.
-          </p>
-          <p>
-            My main focus is full-stack web development using JavaScript-based
-            technologies like{" "}
-            <span className="footer-highlight">React</span> for the frontend,{" "}
-            <span className="footer-highlight">Node.js</span> and{" "}
-            <span className="footer-highlight">Express</span> for the backend, and{" "}
-            <span className="footer-highlight">MySQL</span> for database
-            management. I build responsive, scalable, and user-friendly
-            applications with clean code and efficient architecture. For styling,
-            I rely on <span className="footer-highlight">Tailwind CSS</span>, and
-            I often use tools like{" "}
-            <span className="footer-highlight">Postman</span> for API testing and{" "}
-            <span className="footer-highlight">Navicat</span> for managing
-            databases. My workflow includes version control with{" "}
-            <span className="footer-highlight">Git</span>, and I’m comfortable
-            working in both local and cloud-based environments.
-            While my core stack is JavaScript-based, I also have experience with 
-            <span className="footer-highlight"> Laravel</span> and have used it{" "} 
-            to build full-featured web applications, especially when PHP is 
-            preferred for server-side logic or integration with legacy systems.
-          </p>
-          <p>
-            I have hands-on experience working with{" "}
-            <span className="footer-highlight">Linux</span>-based servers,
-            handling tasks like automated service setups, system monitoring, and
-            optimization — ensuring performance and stability for local network
-            systems.
-          </p>
-          <p>
-            Outside of tech, I help run a small family bakery, where I apply
-            creative thinking in product management, customer service, and
-            marketing. This blend of technical and business experience makes me a
-            flexible and well-rounded developer.
-          </p>
-          <p>
-            I’m passionate about learning, building, and growing — always looking
-            for opportunities to level up and contribute to meaningful projects.
-          </p>
-        </section>
+  <h2>About</h2>
+  <p>
+    I was a junior developer with a background in Computer Engineering,
+    working in a hospital IT department where I managed SIMRS,
+    maintained servers, and supported day-to-day operations. I brought a strong
+    mix of tech skills and adaptability — solving real-world problems
+    under pressure while ensuring systems stayed reliable and efficient.
+  </p>
+  <p>
+    My main focus was full-stack web development using JavaScript-based
+    technologies like{" "}
+    <span className="footer-highlight">React</span> for the frontend,{" "}
+    <span className="footer-highlight">Node.js</span> and{" "}
+    <span className="footer-highlight">Express</span> for the backend, and{" "}
+    <span className="footer-highlight">MySQL</span> for database
+    management. I built responsive, scalable, and user-friendly
+    applications with clean code and efficient architecture. For styling,
+    I relied on <span className="footer-highlight">Tailwind CSS</span>, and
+    I often used tools like{" "}
+    <span className="footer-highlight">Postman</span> for API testing and{" "}
+    <span className="footer-highlight">Navicat</span> for managing
+    databases. My workflow included version control with{" "}
+    <span className="footer-highlight">Git</span>, and I was comfortable
+    working in both local and cloud-based environments.
+    While my core stack was JavaScript-based, I also had experience with 
+    <span className="footer-highlight"> Laravel</span> and used it{" "} 
+    to build full-featured web applications, especially when PHP was 
+    preferred for server-side logic or integration with legacy systems.
+  </p>
+  <p>
+    I had hands-on experience working with{" "}
+    <span className="footer-highlight">Linux</span>-based servers,
+    handling tasks like automated service setups, system monitoring, and
+    optimization — ensuring performance and stability for local network
+    systems.
+  </p>
+  <p>
+    Outside of tech, I helped run a small family bakery, where I applied
+    creative thinking in product management, customer service, and
+    marketing. This blend of technical and business experience made me a
+    flexible and well-rounded developer.
+  </p>
+  <p>
+    I was passionate about learning, building, and growing — always looking
+    for opportunities to level up and contribute to meaningful projects.
+  </p>
+</section>
+
         <section id="experience">
           <h2>Work Experience</h2>
           <div className="experience-list">
             <div className="experience-card">
               <div className="experience-card-left">
-                <div className="experience-card-date">2025 - Present</div>
+                <div className="experience-card-date">2025 - 2025</div>
                 <img
                   src="/Paperlesslogo.png"
                   alt="Paperless Hospital Logo"
@@ -124,9 +125,14 @@ function App() {
               </div>
               <div className="experience-card-right">
                 <div className="experience-card-title-row">
-                  <span className="experience-card-title">
-                    Junior Developer
-                  </span>
+                  <div className="flex items-center gap-2">
+                      <span className="experience-card-title">
+                        Junior Developer 
+                      </span>
+                      <span className="sidebar-tagline text-gray-400 hover:text-white transition-colors duration-200"> 
+                         (Short-term internship)
+                      </span>
+                    </div>
                   <span className="experience-card-location">Gayo Lues</span>
                 </div>
                 <span className="experience-card-workplace">

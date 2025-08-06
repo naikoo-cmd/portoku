@@ -84,7 +84,7 @@ function Sidebar({ activeSection }) {
             <span className="social-tooltip">Instagram</span>
           </a>
           <a
-            href="https://github.com/naiko-coder"
+            href="https://github.com/naikoo-cmd"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

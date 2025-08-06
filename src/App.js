@@ -10,6 +10,11 @@ function App() {
   // State to track the active section based on scroll position
   const [activeSection, setActiveSection] = useState("about");
   const [loading, setLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+const toggleDarkMode = () => {
+  setDarkMode(!darkMode);
+};
 
   useEffect(() => {
     const handleScroll = () => {

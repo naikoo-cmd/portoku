@@ -24,23 +24,17 @@ Portoku is a digital portfolio application designed to showcase your work, exper
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/naiko-coder/portoku.git
+   git clone https://github.com/naikoo-cmd/portoku.git
    cd portoku
    ```
 
 2. **Install dependencies:**
    ```bash
    npm install
-   # or
-   yarn install
-   ```
 
 3. **Run the application:**
    ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+   npm start
 
 4. **Open in your browser:**
    ```
@@ -65,4 +59,4 @@ For questions or suggestions, feel free to contact:
 
 ---
 
-> Made with ❤️ by [naiko-coder](https://github.com/naiko-coder)
+> Made with ❤️ by [naikoo-cmd](https://github.com/naikoo-cmd)

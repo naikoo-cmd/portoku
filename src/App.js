@@ -119,48 +119,7 @@ const toggleDarkMode = () => {
         <section id="experience">
           <h2>Work Experience</h2>
           <div className="experience-list">
-            <div className="experience-card">
-              <div className="experience-card-left">
-                <div className="experience-card-date">2025 - 2025</div>
-                <img
-                  src="/Paperlesslogo.png"
-                  alt="Paperless Hospital Logo"
-                  className="experience-card-image"
-                />
-              </div>
-              <div className="experience-card-right">
-                <div className="experience-card-title-row">
-                  <div className="flex items-center gap-2">
-                      <span className="experience-card-title">
-                        Junior Developer 
-                      </span>
-                      <span className="sidebar-tagline text-gray-400 hover:text-white transition-colors duration-200"> 
-                         (Short-term internship)
-                      </span>
-                    </div>
-                  <span className="experience-card-location">Gayo Lues</span>
-                </div>
-                <span className="experience-card-workplace">
-                  PT. Digital Kreasi Muslim (Paperless Hospital) | RSU Muhammad Ali Kasim
-                </span>
-                <div className="experience-card-desc">
-                  <span className="footer-highlight">
-                    Acted as on-site programmer {" "}
-                  </span>
-                  supporting SIMRS users, resolving issues, and developing features based on hospital needs. 
-                  Also handled system setup, data backups, and documentation.
-                </div>
-                <div className="experience-card-skills">
-                  <span className="experience-skill">Troubleshooting</span>
-                  <span className="experience-skill">Development</span>
-                  <span className="experience-skill">Linux</span>
-                  <span className="experience-skill">Backup</span>
-                  <span className="experience-skill">Documentation</span>
-                  <span className="experience-skill">Communication</span>
-
-                </div>
-              </div>
-            </div>
+            
             <div className="experience-card">
               <div className="experience-card-left">
                 <div className="experience-card-date">2023 - Present</div>
@@ -193,6 +152,48 @@ const toggleDarkMode = () => {
                   <span className="experience-skill">Auth</span>
                   <span className="experience-skill">UI/UX</span>
                   <span className="experience-skill">Etc..</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="experience-card">
+              <div className="experience-card-left">
+                <div className="experience-card-date">2025 - 2025</div>
+                <img
+                  src="/Paperlesslogo.png"
+                  alt="Paperless Hospital Logo"
+                  className="experience-card-image"
+                />
+              </div>
+              <div className="experience-card-right">
+                <div className="experience-card-title-row">
+                  <div className="flex items-center gap-2">
+                      <span className="experience-card-title">
+                        Junior Developer 
+                      </span>
+                      <span className="sidebar-tagline text-gray-400 hover:text-white transition-colors duration-200"> 
+                         (Short-term project)
+                      </span>
+                    </div>
+                  <span className="experience-card-location">Gayo Lues</span>
+                </div>
+                <span className="experience-card-workplace">
+                  PT. Digital Kreasi Muslim (Paperless Hospital) | RSU Muhammad Ali Kasim
+                </span>
+                <div className="experience-card-desc">
+                  <span className="footer-highlight">
+                    Acted as on-site programmer {" "}
+                  </span>
+                  supporting SIMRS users, resolving issues, and developing features based on hospital needs. 
+                  Also handled system setup, data backups, and documentation.
+                </div>
+                <div className="experience-card-skills">
+                  <span className="experience-skill">Troubleshooting</span>
+                  <span className="experience-skill">Development</span>
+                  <span className="experience-skill">Linux</span>
+                  <span className="experience-skill">Backup</span>
+                  <span className="experience-skill">Documentation</span>
+                  <span className="experience-skill">Communication</span>
                 </div>
               </div>
             </div>
@@ -336,7 +337,12 @@ const toggleDarkMode = () => {
             skills={["React", "JavaScript", "CSS", "Responsive Design"]}
           />
           <ProjectCard
-            title="New Student Registration System"
+            title={
+              <>
+                New Student Registration System{" "}
+                <span style={{ color: "#888" }}>(on development)</span>
+              </>
+            }
             image="https://picsum.photos/seed/studentregistration/400"
             link="https://github.com/naiko-coder/ppdb-nextjs"
             description="Student registration system with a modern Next.js and React interface, integrated with Google Workspace for seamless Google OAuth authentication, MySQL data management via REST API, and Google Drive document storage. Styled using Tailwind CSS for a responsive user experience."
@@ -353,9 +359,9 @@ const toggleDarkMode = () => {
             ]}
           />
           <ProjectCard
-            title="Worker Absence Management System"
+            title="Kotak Saran Digital"
             image="https://picsum.photos/seed/workerabsence/400"
-            link="https://github.com/naiko-coder/under-development"
+            link="https://kotak-saran-digital.vercel.app/"
             description="A system designed to manage and track employee absences efficiently. Built with Laravel framework."
             skills={["Laravel", "PHP", "MySQL"]}
           />

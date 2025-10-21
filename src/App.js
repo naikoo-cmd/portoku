@@ -332,30 +332,32 @@ const toggleDarkMode = () => {
           <ProjectCard
             title="Portoku Web"
             image="https://picsum.photos/seed/portoku/400"
-            link="https://github.com/naiko-coder/portoku"
+            link="https://nicoaramy.com"
             description="Portoku is a personal portfolio website designed to showcase my professional experiences, skills, and projects in a modern and interactive way. Built with React and styled for a sleek user experience."
             skills={["React", "JavaScript", "CSS", "Responsive Design"]}
           />
           <ProjectCard
             title={
               <>
-                New Student Registration System{" "}
-                <span style={{ color: "#888" }}>(on development)</span>
+                Nuxt 3 API Movies projects{" "}
+                <span style={{ color: "#888" }}>(for testing)</span>
               </>
             }
-            image="https://picsum.photos/seed/studentregistration/400"
-            link="https://github.com/naiko-coder/ppdb-nextjs"
-            description="Student registration system with a modern Next.js and React interface, integrated with Google Workspace for seamless Google OAuth authentication, MySQL data management via REST API, and Google Drive document storage. Styled using Tailwind CSS for a responsive user experience."
+            image="https://picsum.photos/seed/nuxt3movies/400"
+            link="https://fleava.nuxt3app.nicoaramy.com/"
+            description="Movie DB Fetching Application built with Nuxt 3, utilizing The Movie Database (TMDb) API to provide users with an interactive platform to explore and discover movies. Features include dynamic routing, server-side rendering, and responsive design for optimal viewing across devices."
             skills={[
-              "Google Workspace",
-              "Next.js",
-              "React",
-              "Tailwind CSS",
-              "Google OAuth",
-              "REST API",
-              "MySQL",
-              "Authentication",
-              "Google Drive",
+              "Nuxt 3",
+              "Vue.js",
+              "JavaScript",
+              "TMDb API",
+              "Responsive Design",
+              "Server-Side Rendering",
+              "API Integration",
+              "Dynamic Routing",
+              "State Management",
+              "Composition API",
+              "Vuex"
             ]}
           />
           <ProjectCard

@@ -12,9 +12,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
-const toggleDarkMode = () => {
-  setDarkMode(!darkMode);
-};
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,58 +68,59 @@ const toggleDarkMode = () => {
       <Sidebar activeSection={activeSection} />
       <main className="main-content">
         <section className="text-center py-4 px-6 max-w-4xl mx-auto" id="about">
-  <h2>About</h2>
-  <p>
-    I was a junior developer with a background in Computer Engineering,
-    working in a hospital IT department where I managed SIMRS,
-    maintained servers, and supported day-to-day operations. I brought a strong
-    mix of tech skills and adaptability — solving real-world problems
-    under pressure while ensuring systems stayed reliable and efficient.
-  </p>
-  <p>
-    My main focus was full-stack web development using JavaScript-based
-    technologies like{" "}
-    <span className="footer-highlight">React</span> for the frontend,{" "}
-    <span className="footer-highlight">Node.js</span> and{" "}
-    <span className="footer-highlight">Express</span> for the backend, and{" "}
-    <span className="footer-highlight">MySQL</span> for database
-    management. I built responsive, scalable, and user-friendly
-    applications with clean code and efficient architecture. For styling,
-    I relied on <span className="footer-highlight">Tailwind CSS</span>, and
-    I often used tools like{" "}
-    <span className="footer-highlight">Postman</span> for API testing and{" "}
-    <span className="footer-highlight">Navicat</span> for managing
-    databases. My workflow included version control with{" "}
-    <span className="footer-highlight">Git</span>, and I was comfortable
-    working in both local and cloud-based environments.
-    While my core stack was JavaScript-based, I also had experience with 
-    <span className="footer-highlight"> Laravel</span> and used it{" "} 
-    to build full-featured web applications, especially when PHP was 
-    preferred for server-side logic or integration with legacy systems.
-  </p>
-  <p>
-    I had hands-on experience working with{" "}
-    <span className="footer-highlight">Linux</span>-based servers,
-    handling tasks like automated service setups, system monitoring, and
-    optimization — ensuring performance and stability for local network
-    systems.
-  </p>
-  <p>
-    Outside of tech, I helped run a small family bakery, where I applied
-    creative thinking in product management, customer service, and
-    marketing. This blend of technical and business experience made me a
-    flexible and well-rounded developer.
-  </p>
-  <p>
-    I was passionate about learning, building, and growing — always looking
-    for opportunities to level up and contribute to meaningful projects.
-  </p>
-</section>
+          <h2>About</h2>
+          <p>
+            I was a junior developer with a background in Computer Engineering,
+            working in a hospital IT department where I managed SIMRS,
+            maintained servers, and supported day-to-day operations. I brought a
+            strong mix of tech skills and adaptability — solving real-world
+            problems under pressure while ensuring systems stayed reliable and
+            efficient.
+          </p>
+          <p>
+            My main focus was full-stack web development using JavaScript-based
+            technologies like <span className="footer-highlight">React</span>{" "}
+            for the frontend, <span className="footer-highlight">Node.js</span>{" "}
+            and <span className="footer-highlight">Express</span> for the
+            backend, and <span className="footer-highlight">MySQL</span> for
+            database management. I built responsive, scalable, and user-friendly
+            applications with clean code and efficient architecture. For
+            styling, I relied on{" "}
+            <span className="footer-highlight">Tailwind CSS</span>, and I often
+            used tools like <span className="footer-highlight">Postman</span>{" "}
+            for API testing and{" "}
+            <span className="footer-highlight">Navicat</span> for managing
+            databases. My workflow included version control with{" "}
+            <span className="footer-highlight">Git</span>, and I was comfortable
+            working in both local and cloud-based environments. While my core
+            stack was JavaScript-based, I also had experience with
+            <span className="footer-highlight"> Laravel</span> and used it to
+            build full-featured web applications, especially when PHP was
+            preferred for server-side logic or integration with legacy systems.
+          </p>
+          <p>
+            I had hands-on experience working with{" "}
+            <span className="footer-highlight">Linux</span>-based servers,
+            handling tasks like automated service setups, system monitoring, and
+            optimization — ensuring performance and stability for local network
+            systems.
+          </p>
+          <p>
+            Outside of tech, I helped run a small family bakery, where I applied
+            creative thinking in product management, customer service, and
+            marketing. This blend of technical and business experience made me a
+            flexible and well-rounded developer.
+          </p>
+          <p>
+            I was passionate about learning, building, and growing — always
+            looking for opportunities to level up and contribute to meaningful
+            projects.
+          </p>
+        </section>
 
         <section id="experience">
           <h2>Work Experience</h2>
           <div className="experience-list">
-            
             <div className="experience-card">
               <div className="experience-card-left">
                 <div className="experience-card-date">2023 - Present</div>
@@ -168,24 +169,26 @@ const toggleDarkMode = () => {
               <div className="experience-card-right">
                 <div className="experience-card-title-row">
                   <div className="flex items-center gap-2">
-                      <span className="experience-card-title">
-                        Junior Developer 
-                      </span>
-                      <span className="sidebar-tagline text-gray-400 hover:text-white transition-colors duration-200"> 
-                         (Short-term project)
-                      </span>
-                    </div>
+                    <span className="experience-card-title">
+                      Junior Developer
+                    </span>
+                    <span className="sidebar-tagline text-gray-400 hover:text-white transition-colors duration-200">
+                      (Short-term project)
+                    </span>
+                  </div>
                   <span className="experience-card-location">Gayo Lues</span>
                 </div>
                 <span className="experience-card-workplace">
-                  PT. Digital Kreasi Muslim (Paperless Hospital) | RSU Muhammad Ali Kasim
+                  PT. Digital Kreasi Muslim (Paperless Hospital) | RSU Muhammad
+                  Ali Kasim
                 </span>
                 <div className="experience-card-desc">
                   <span className="footer-highlight">
-                    Acted as on-site programmer {" "}
+                    Acted as on-site programmer{" "}
                   </span>
-                  supporting SIMRS users, resolving issues, and developing features based on hospital needs. 
-                  Also handled system setup, data backups, and documentation.
+                  supporting SIMRS users, resolving issues, and developing
+                  features based on hospital needs. Also handled system setup,
+                  data backups, and documentation.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Troubleshooting</span>
@@ -208,7 +211,9 @@ const toggleDarkMode = () => {
               </div>
               <div className="experience-card-right">
                 <div className="experience-card-title-row">
-                  <span className="experience-card-title">Home Business Owner</span>
+                  <span className="experience-card-title">
+                    Home Business Owner
+                  </span>
                   <span className="experience-card-location">Central Aceh</span>
                 </div>
                 <span className="experience-card-workplace">
@@ -218,9 +223,9 @@ const toggleDarkMode = () => {
                   <span className="footer-highlight">
                     Ran a small food and beverage business
                   </span>
-                  , specializing in pastries and drinks; responsibilities included
-                  product preparation, inventory tracking, order management, and
-                  implementing strategies to optimize profits.
+                  , specializing in pastries and drinks; responsibilities
+                  included product preparation, inventory tracking, order
+                  management, and implementing strategies to optimize profits.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Product Deployment</span>
@@ -244,7 +249,9 @@ const toggleDarkMode = () => {
                   <span className="experience-card-title">School Operator</span>
                   <span className="experience-card-location">Central Aceh</span>
                 </div>
-                <span className="experience-card-workplace">TK IT Cendekia</span>
+                <span className="experience-card-workplace">
+                  TK IT Cendekia
+                </span>
                 <div className="experience-card-desc">
                   <span className="footer-highlight">
                     Oversaw school administrative operations
@@ -278,12 +285,16 @@ const toggleDarkMode = () => {
                   <span className="experience-card-title">Designer</span>
                   <span className="experience-card-location">Banda Aceh</span>
                 </div>
-                <span className="experience-card-workplace">PT. Armada Banda Jaya</span>
+                <span className="experience-card-workplace">
+                  PT. Armada Banda Jaya
+                </span>
                 <div className="experience-card-desc">
                   <span className="footer-highlight">
                     Created marketing and promotional materials
                   </span>
-                  {" for print and digital use, coordinated ad placements across multiple channels, supported company events, and handled visual documentation of organizational activities."}
+                  {
+                    " for print and digital use, coordinated ad placements across multiple channels, supported company events, and handled visual documentation of organizational activities."
+                  }
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Adobe Photoshop</span>
@@ -313,12 +324,14 @@ const toggleDarkMode = () => {
                     Provided assistance in laboratory-based academic settings
                   </span>
                   , helping facilitate student experiments, ensuring proper use
-                  and maintenance of lab equipment, and offering hands-on support
-                  during practical sessions.
+                  and maintenance of lab equipment, and offering hands-on
+                  support during practical sessions.
                 </div>
                 <div className="experience-card-skills">
                   <span className="experience-skill">Laboratory Skills</span>
-                  <span className="experience-skill">Equipment Maintenance</span>
+                  <span className="experience-skill">
+                    Equipment Maintenance
+                  </span>
                   <span className="experience-skill">Student Support</span>
                   <span className="experience-skill">Data Analysis</span>
                 </div>
@@ -339,8 +352,7 @@ const toggleDarkMode = () => {
           <ProjectCard
             title={
               <>
-                Nuxt 3 API Movies projects{" "}
-                <span style={{ color: "#888" }}>(for testing)</span>
+                Nuxt 3 API Movies <span style={{ color: "#888" }}>(TMDb)</span>
               </>
             }
             image="https://picsum.photos/seed/nuxt3movies/400"
@@ -357,7 +369,7 @@ const toggleDarkMode = () => {
               "Dynamic Routing",
               "State Management",
               "Composition API",
-              "Vuex"
+              "Vuex",
             ]}
           />
           <ProjectCard
@@ -407,9 +419,9 @@ const toggleDarkMode = () => {
                   Universitas Pembangunan Panca Budi
                 </span>
                 <div className="education-card-desc">
-                  Specialized in computer engineering, networking, and fundamental
-                  programming, with a strong foundation in both theoretical
-                  knowledge and hands-on skills.
+                  Specialized in computer engineering, networking, and
+                  fundamental programming, with a strong foundation in both
+                  theoretical knowledge and hands-on skills.
                 </div>
               </div>
             </div>
@@ -455,9 +467,9 @@ const toggleDarkMode = () => {
                 </div>
                 <span className="education-card-school">SMK N 1 Takengon</span>
                 <div className="education-card-desc">
-                  Emphasized hands-on training in computer hardware, network setup,
-                  and troubleshooting, preparing students for real-world technical
-                  challenges.
+                  Emphasized hands-on training in computer hardware, network
+                  setup, and troubleshooting, preparing students for real-world
+                  technical challenges.
                 </div>
               </div>
             </div>
@@ -469,8 +481,8 @@ const toggleDarkMode = () => {
             <span>
               This site was crafted with{" "}
               <span className="footer-highlight">Visual Studio Code</span> and
-              customized using{" "}
-              <span className="footer-highlight">React</span> and{" "}
+              customized using <span className="footer-highlight">React</span>{" "}
+              and{" "}
               <span className="footer-highlight">
                 <b>CSS</b>
               </span>
